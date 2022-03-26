@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="ChangeDisk.exe" version="1.0.0.0" publicKeyToken="d144f4e0bc9a3087" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="ChangeDisk" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="ChangeDisk.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          Параметры манифеста UAC
+          Если нужно изменить уровень контроля учетных записей Windows, замените 
+          узел requestedExecutionLevel одним из следующих значений.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+        Если нужно использовать виртуализацию файлов и реестра для обратной
+             совместимости, удалите узел requestedExecutionLevel.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="ChangeDisk.exe" size="12704">
+      <assemblyIdentity name="ChangeDisk" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>ZPWlgf+29gyBTqVbGPbvTdqfuVdd5zT1eO70oemA5Oo=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="ChangeDisk.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=DOM-ПК\DOM" issuerKeyHash="cac5d6c1c30c1b3338adc89a66395c6d9171e8aa" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>TTqJP3X0PrtoMEjK7TRjpN/iNY8db+aeNtp0RFwkWqY=</DigestValue></Reference></SignedInfo><SignatureValue>mu4e3s4T0fRFMBfPSlnF0a4uXLiQ95/YWJmWu9z8jHfK0VE99YsftF9DgoRJ0quCFbldZvpArBBiGREqYiUYFmqJRbZtPzJrPhRzIgm64D8HvKOcV1th0RZr01DuAxlLy4rFGByB0YMXtQpRszru4dOxbuPvOJw1Lh158bpKcqc=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>pAKE9hwk4d9aiWsMmoRVqLQmRbDMUW3/Nnv0pyu3Fuea7pbrKKwbXypOP521b2xy4Y7z7LneGUl4t7Atprupfe5jzZbtYPO4LcUOWhOjdCi7E1Dqb6WUY97atetknLcpdzkpauZOMFyjV3bXASydKfmCO++/N7zVG5PVE1zpzYk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="a65a245c4474da369ee66f1d8f35e2dfa46334edca483068bb3ef4753f893a4d" Description="" Url=""><as:assemblyIdentity name="ChangeDisk.exe" version="1.0.0.0" publicKeyToken="d144f4e0bc9a3087" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=DOM-ПК\DOM</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>rotdjwSxyCZaINNBtkg72TcWX1/DvuheEfrTiD5cZRg=</DigestValue></Reference></SignedInfo><SignatureValue>CUvV3xfEEjyjdjYOjwmdvxQm4K2oevf2MSUa79AOetcGMYbbpYsu62N76SUiv3Vpv1LBuAnPdlyDmW+MpsNkfn+D9ssfl/4BKZjZYzs0bcWCuyLQsjFUNlxpRfPlf8XlTcdKhOK0NlUrIywv4lL4o0H+ZbKQpMFLUABGtvlXyNA=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>pAKE9hwk4d9aiWsMmoRVqLQmRbDMUW3/Nnv0pyu3Fuea7pbrKKwbXypOP521b2xy4Y7z7LneGUl4t7Atprupfe5jzZbtYPO4LcUOWhOjdCi7E1Dqb6WUY97atetknLcpdzkpauZOMFyjV3bXASydKfmCO++/N7zVG5PVE1zpzYk=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQI9g7bt71q7lBzTY6Kp7eJTANBgkqhkiG9w0BAQsFADAfMR0wGwYDVQQDHhQARABPAE0ALQQfBBoAXABEAE8ATTAeFw0yMjAzMjEyMTA5NDhaFw0yMzAzMjIwMzA5NDhaMB8xHTAbBgNVBAMeFABEAE8ATQAtBB8EGgBcAEQATwBNMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCkAoT2HCTh31qJawyahFWotCZFsMxRbf82e/SnK7cW55rulusorBtfKk4/nbVvbHLhjvPsud4ZSXi3sC2mu6l97mPNlu1g87gtxQ5aE6N0KLsTUOpvpZRj3tq162Sctyl3OSlq5k4wXKNXdtcBLJ0p+YI77783vNUbk9UTXOnNiQIDAQABMA0GCSqGSIb3DQEBCwUAA4GBAH9YE0znH1iRjpxqBXiPiWwNQEa3iwEY0AAC7cY4+V2Pls9i2OcJcHPFSEl2DBrJ1v5gLaoekVOTMhPugDNIijnXaZ7C1glxOaD51KEy87aj45v1ShvyevJnZ/URtp+UBORZ2ZsmLpivSuDpOGm/aw8F4eurof8SWE0MdfvcSlXb</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

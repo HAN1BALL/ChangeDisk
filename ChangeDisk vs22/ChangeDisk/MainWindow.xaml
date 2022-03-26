@@ -1,0 +1,31 @@
+﻿<Window x:Class="ChangeDisk.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ChangeDisk"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="600">
+    <Grid Background="#FF545454">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="1.5*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="0.5*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="0.5*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="0.4*"/>
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Column="1" Grid.Row="1" Text="Введите диск:" VerticalAlignment="Top" Foreground="#FFD8D8D8" FontWeight="Bold" FontSize="20"/>
+        <TextBox x:Name="Disk" Grid.Column="2" Grid.Row="1" TextWrapping="Wrap" Background="#FFD8D8D8" Foreground="#FF545454" FontWeight="Bold" FontSize="20" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+        <Button Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" Margin="10" Content="изменить" Background="#FF545454" BorderBrush="Black" Foreground="#FFD8D8D8" FontWeight="Bold" FontSize="20" Click="Button_Click"/>
+        <Label Grid.Column="1" Grid.Row="5" Grid.ColumnSpan="2" Content="© Copyright by chika" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="#FFD8D8D8"/>
+        <CheckBox x:Name="checkBox1" Grid.Column="3" Grid.Row="3" Content="" HorizontalAlignment="center" VerticalAlignment="Center" Foreground="#FFD8D8D8"/>
+    </Grid>
+</Window>
